@@ -38,8 +38,8 @@ def get_cached_stats() -> dict:
 @app.route("/")
 def index():
     """Main dashboard page"""
-    stats = get_cached_stats()
-    return render_template("dashboard.html", stats=stats)
+    dashboard_metrics = get_cached_stats()
+    return render_template("dashboard.html", stats=dashboard_metrics)
 
 
 @app.route("/api/stats")
