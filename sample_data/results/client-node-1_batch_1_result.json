@@ -1,88 +1,88 @@
 {
   "batch_id": "client-node-1-batch-1",
   "client_id": "client-node-1",
-  "worker_id": "worker-local-5956",
-  "processed_at": "2026-04-24T11:23:07.335239Z",
+  "worker_id": "worker-local-27032",
+  "processed_at": "2026-04-24T16:05:31.733982Z",
   "total_logs": 50,
   "level_counts": {
-    "INFO": 23,
-    "ERROR": 9,
-    "WARNING": 11,
-    "DEBUG": 3,
-    "CRITICAL": 4
+    "INFO": 25,
+    "ERROR": 10,
+    "WARNING": 7,
+    "CRITICAL": 4,
+    "DEBUG": 4
   },
-  "error_rate_pct": 18.0,
+  "error_rate_pct": 20.0,
   "critical_count": 4,
   "top_services": {
-    "user-service": 12,
-    "payment-service": 11,
-    "auth-service": 10,
-    "inventory-service": 10,
-    "notification-service": 7
+    "payment-service": 14,
+    "inventory-service": 11,
+    "auth-service": 11,
+    "notification-service": 8,
+    "user-service": 6
   },
   "top_ips": {
-    "192.168.188.2": 5,
-    "192.168.103.161": 5,
-    "192.168.0.20": 3,
-    "192.168.227.186": 3,
-    "192.168.224.13": 3,
-    "192.168.60.41": 3,
-    "192.168.59.217": 3,
-    "192.168.11.253": 3,
-    "192.168.37.106": 3,
-    "192.168.52.220": 2
+    "192.168.190.238": 7,
+    "192.168.146.96": 5,
+    "192.168.119.115": 5,
+    "192.168.32.221": 4,
+    "192.168.141.229": 4,
+    "192.168.52.158": 3,
+    "192.168.71.197": 3,
+    "192.168.133.80": 3,
+    "192.168.56.143": 3,
+    "192.168.24.187": 2
   },
   "error_samples": [
     {
-      "timestamp": "2026-04-24T11:22:59.845661Z",
-      "service": "auth-service",
-      "message": "Authentication failed for user 2763",
-      "ip": "192.168.52.220"
+      "timestamp": "2026-04-24T16:05:24.258173Z",
+      "service": "user-service",
+      "message": "Null pointer exception in module 9149",
+      "ip": "192.168.71.197"
     },
     {
-      "timestamp": "2026-04-24T11:22:59.845724Z",
+      "timestamp": "2026-04-24T16:05:24.258195Z",
       "service": "inventory-service",
       "message": "Database connection failed",
-      "ip": "192.168.188.2"
+      "ip": "192.168.52.158"
     },
     {
-      "timestamp": "2026-04-24T11:22:59.845751Z",
-      "service": "notification-service",
-      "message": "Database connection failed",
-      "ip": "192.168.11.253"
+      "timestamp": "2026-04-24T16:05:24.258250Z",
+      "service": "inventory-service",
+      "message": "Null pointer exception in module 1336",
+      "ip": "192.168.71.197"
     },
     {
-      "timestamp": "2026-04-24T11:22:59.845773Z",
-      "service": "notification-service",
-      "message": "Timeout after 6423ms",
-      "ip": "192.168.107.185"
-    },
-    {
-      "timestamp": "2026-04-24T11:22:59.845829Z",
+      "timestamp": "2026-04-24T16:05:24.258264Z",
       "service": "payment-service",
-      "message": "File not found: /var/log/app/5628.log",
-      "ip": "192.168.188.2"
+      "message": "Authentication failed for user 110",
+      "ip": "192.168.133.80"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:24.258268Z",
+      "service": "auth-service",
+      "message": "Database connection failed",
+      "ip": "192.168.71.197"
     }
   ],
   "critical_alerts": [
     {
-      "timestamp": "2026-04-24T11:22:59.845798Z",
+      "timestamp": "2026-04-24T16:05:24.258223Z",
       "service": "auth-service",
       "message": "SSL certificate expired"
     },
     {
-      "timestamp": "2026-04-24T11:22:59.845809Z",
-      "service": "user-service",
-      "message": "Service crashed: 7419"
+      "timestamp": "2026-04-24T16:05:24.258233Z",
+      "service": "inventory-service",
+      "message": "Data corruption detected in table 9677"
     },
     {
-      "timestamp": "2026-04-24T11:22:59.845814Z",
+      "timestamp": "2026-04-24T16:05:24.258274Z",
       "service": "payment-service",
-      "message": "Service crashed: 250"
+      "message": "Data corruption detected in table 2854"
     },
     {
-      "timestamp": "2026-04-24T11:22:59.845865Z",
-      "service": "auth-service",
+      "timestamp": "2026-04-24T16:05:24.258333Z",
+      "service": "notification-service",
       "message": "Out of memory error"
     }
   ],

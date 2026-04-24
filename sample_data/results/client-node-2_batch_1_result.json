@@ -1,84 +1,99 @@
 {
   "batch_id": "client-node-2-batch-1",
   "client_id": "client-node-2",
-  "worker_id": "worker-local-5956",
-  "processed_at": "2026-04-24T11:23:08.852527Z",
+  "worker_id": "worker-local-27032",
+  "processed_at": "2026-04-24T16:05:33.255443Z",
   "total_logs": 50,
   "level_counts": {
+    "ERROR": 8,
     "WARNING": 9,
-    "ERROR": 12,
-    "DEBUG": 5,
-    "CRITICAL": 3,
-    "INFO": 21
+    "INFO": 24,
+    "CRITICAL": 6,
+    "DEBUG": 3
   },
-  "error_rate_pct": 24.0,
-  "critical_count": 3,
+  "error_rate_pct": 16.0,
+  "critical_count": 6,
   "top_services": {
-    "notification-service": 13,
-    "payment-service": 12,
+    "inventory-service": 12,
+    "payment-service": 11,
+    "notification-service": 11,
     "user-service": 9,
-    "inventory-service": 8,
-    "auth-service": 8
+    "auth-service": 7
   },
   "top_ips": {
-    "192.168.190.98": 5,
-    "192.168.107.21": 5,
-    "192.168.72.177": 5,
-    "192.168.93.169": 4,
-    "192.168.104.13": 4,
-    "192.168.227.188": 4,
-    "192.168.151.87": 4,
-    "192.168.64.185": 4,
-    "192.168.108.186": 2,
-    "192.168.205.180": 2
+    "192.168.104.208": 6,
+    "192.168.191.92": 5,
+    "192.168.125.30": 4,
+    "192.168.8.96": 4,
+    "192.168.135.154": 3,
+    "192.168.66.125": 3,
+    "192.168.29.98": 3,
+    "192.168.200.102": 3,
+    "192.168.194.50": 3,
+    "192.168.189.94": 3
   },
   "error_samples": [
     {
-      "timestamp": "2026-04-24T11:23:03.585289Z",
+      "timestamp": "2026-04-24T16:05:28.000648Z",
       "service": "user-service",
-      "message": "Timeout after 902ms",
-      "ip": "192.168.27.43"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:03.585377Z",
-      "service": "notification-service",
-      "message": "File not found: /var/log/app/6782.log",
-      "ip": "192.168.151.87"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:03.585384Z",
-      "service": "auth-service",
-      "message": "Authentication failed for user 8799",
-      "ip": "192.168.107.21"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:03.585406Z",
-      "service": "notification-service",
-      "message": "Authentication failed for user 8244",
-      "ip": "192.168.107.21"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:03.585426Z",
-      "service": "notification-service",
       "message": "Database connection failed",
-      "ip": "192.168.93.169"
+      "ip": "192.168.25.25"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:28.000773Z",
+      "service": "payment-service",
+      "message": "Null pointer exception in module 7916",
+      "ip": "192.168.189.94"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:28.000778Z",
+      "service": "inventory-service",
+      "message": "File not found: /var/log/app/5369.log",
+      "ip": "192.168.8.96"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:28.000817Z",
+      "service": "user-service",
+      "message": "Database connection failed",
+      "ip": "192.168.1.231"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:28.000831Z",
+      "service": "payment-service",
+      "message": "Null pointer exception in module 6320",
+      "ip": "192.168.8.96"
     }
   ],
   "critical_alerts": [
     {
-      "timestamp": "2026-04-24T11:23:03.585322Z",
-      "service": "user-service",
+      "timestamp": "2026-04-24T16:05:28.000718Z",
+      "service": "notification-service",
       "message": "Out of memory error"
     },
     {
-      "timestamp": "2026-04-24T11:23:03.585412Z",
-      "service": "auth-service",
-      "message": "Data corruption detected in table 5301"
+      "timestamp": "2026-04-24T16:05:28.000755Z",
+      "service": "inventory-service",
+      "message": "SSL certificate expired"
     },
     {
-      "timestamp": "2026-04-24T11:23:03.585503Z",
+      "timestamp": "2026-04-24T16:05:28.000788Z",
+      "service": "inventory-service",
+      "message": "Out of memory error"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:28.000842Z",
       "service": "notification-service",
-      "message": "SSL certificate expired"
+      "message": "Service crashed: 7387"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:28.000863Z",
+      "service": "notification-service",
+      "message": "Data corruption detected in table 7142"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:28.000900Z",
+      "service": "payment-service",
+      "message": "Service crashed: 2940"
     }
   ],
   "status": "SUCCESS"

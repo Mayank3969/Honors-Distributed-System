@@ -5,454 +5,454 @@
   "log_count": 50,
   "logs": [
     {
-      "timestamp": "2026-04-24T11:23:00.848096Z",
-      "client_id": "client-node-1",
-      "service": "payment-service",
-      "level": "WARNING",
-      "ip_address": "192.168.219.70",
-      "message": "High memory usage: 5434%",
-      "request_id": "req-209631"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848110Z",
+      "timestamp": "2026-04-24T16:05:25.260290Z",
       "client_id": "client-node-1",
       "service": "auth-service",
-      "level": "DEBUG",
-      "ip_address": "192.168.12.90",
-      "message": "Entering function processRequest()",
-      "request_id": "req-459017"
+      "level": "INFO",
+      "ip_address": "192.168.125.28",
+      "message": "Data fetched from DB",
+      "request_id": "req-509887"
     },
     {
-      "timestamp": "2026-04-24T11:23:00.848116Z",
+      "timestamp": "2026-04-24T16:05:25.260330Z",
       "client_id": "client-node-1",
       "service": "inventory-service",
       "level": "INFO",
-      "ip_address": "192.168.37.106",
-      "message": "Heartbeat OK",
-      "request_id": "req-383879"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848120Z",
-      "client_id": "client-node-1",
-      "service": "inventory-service",
-      "level": "WARNING",
-      "ip_address": "192.168.115.185",
-      "message": "Rate limit approaching",
-      "request_id": "req-384212"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848126Z",
-      "client_id": "client-node-1",
-      "service": "user-service",
-      "level": "WARNING",
-      "ip_address": "192.168.0.20",
-      "message": "High memory usage: 3986%",
-      "request_id": "req-520226"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848131Z",
-      "client_id": "client-node-1",
-      "service": "inventory-service",
-      "level": "ERROR",
-      "ip_address": "192.168.237.167",
-      "message": "File not found: /var/log/app/1871.log",
-      "request_id": "req-972682"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848135Z",
-      "client_id": "client-node-1",
-      "service": "payment-service",
-      "level": "INFO",
-      "ip_address": "192.168.110.123",
+      "ip_address": "192.168.141.229",
       "message": "User login successful",
-      "request_id": "req-548769"
+      "request_id": "req-781787"
     },
     {
-      "timestamp": "2026-04-24T11:23:00.848141Z",
+      "timestamp": "2026-04-24T16:05:25.260343Z",
       "client_id": "client-node-1",
-      "service": "notification-service",
-      "level": "WARNING",
-      "ip_address": "192.168.52.220",
-      "message": "High memory usage: 1399%",
-      "request_id": "req-521958"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848149Z",
-      "client_id": "client-node-1",
-      "service": "user-service",
-      "level": "DEBUG",
-      "ip_address": "192.168.115.185",
-      "message": "Entering function processRequest()",
-      "request_id": "req-638226"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848154Z",
-      "client_id": "client-node-1",
-      "service": "inventory-service",
-      "level": "WARNING",
-      "ip_address": "192.168.115.185",
-      "message": "Disk usage above 80%",
-      "request_id": "req-706758"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848158Z",
-      "client_id": "client-node-1",
-      "service": "user-service",
+      "service": "auth-service",
       "level": "INFO",
-      "ip_address": "192.168.224.13",
-      "message": "Session started",
-      "request_id": "req-285609"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848167Z",
-      "client_id": "client-node-1",
-      "service": "user-service",
-      "level": "WARNING",
-      "ip_address": "192.168.103.161",
-      "message": "Disk usage above 80%",
-      "request_id": "req-405349"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848171Z",
-      "client_id": "client-node-1",
-      "service": "notification-service",
-      "level": "INFO",
-      "ip_address": "192.168.65.55",
+      "ip_address": "192.168.125.28",
       "message": "Request processed successfully",
-      "request_id": "req-190115"
+      "request_id": "req-865839"
     },
     {
-      "timestamp": "2026-04-24T11:23:00.848175Z",
-      "client_id": "client-node-1",
-      "service": "auth-service",
-      "level": "WARNING",
-      "ip_address": "192.168.59.217",
-      "message": "Rate limit approaching",
-      "request_id": "req-183901"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848179Z",
-      "client_id": "client-node-1",
-      "service": "user-service",
-      "level": "CRITICAL",
-      "ip_address": "192.168.110.123",
-      "message": "SSL certificate expired",
-      "request_id": "req-319563"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848183Z",
-      "client_id": "client-node-1",
-      "service": "auth-service",
-      "level": "DEBUG",
-      "ip_address": "192.168.11.253",
-      "message": "Entering function processRequest()",
-      "request_id": "req-258944"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848188Z",
-      "client_id": "client-node-1",
-      "service": "user-service",
-      "level": "WARNING",
-      "ip_address": "192.168.11.253",
-      "message": "High memory usage: 8331%",
-      "request_id": "req-424123"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848193Z",
-      "client_id": "client-node-1",
-      "service": "auth-service",
-      "level": "ERROR",
-      "ip_address": "192.168.224.13",
-      "message": "Timeout after 7066ms",
-      "request_id": "req-341423"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848198Z",
-      "client_id": "client-node-1",
-      "service": "user-service",
-      "level": "WARNING",
-      "ip_address": "192.168.224.13",
-      "message": "Slow DB query detected: 1508ms",
-      "request_id": "req-776864"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848203Z",
-      "client_id": "client-node-1",
-      "service": "auth-service",
-      "level": "INFO",
-      "ip_address": "192.168.147.185",
-      "message": "API call completed in 1500ms",
-      "request_id": "req-757660"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848207Z",
+      "timestamp": "2026-04-24T16:05:25.260361Z",
       "client_id": "client-node-1",
       "service": "inventory-service",
-      "level": "INFO",
-      "ip_address": "192.168.219.70",
-      "message": "Cache refreshed",
-      "request_id": "req-593913"
+      "level": "ERROR",
+      "ip_address": "192.168.167.247",
+      "message": "Authentication failed for user 473",
+      "request_id": "req-251030"
     },
     {
-      "timestamp": "2026-04-24T11:23:00.848211Z",
+      "timestamp": "2026-04-24T16:05:25.260372Z",
       "client_id": "client-node-1",
       "service": "notification-service",
-      "level": "INFO",
-      "ip_address": "192.168.219.70",
-      "message": "User login successful",
-      "request_id": "req-990629"
+      "level": "ERROR",
+      "ip_address": "192.168.190.168",
+      "message": "Database connection failed",
+      "request_id": "req-361250"
     },
     {
-      "timestamp": "2026-04-24T11:23:00.848215Z",
+      "timestamp": "2026-04-24T16:05:25.260389Z",
       "client_id": "client-node-1",
-      "service": "inventory-service",
+      "service": "auth-service",
+      "level": "WARNING",
+      "ip_address": "192.168.154.39",
+      "message": "Slow DB query detected: 8369ms",
+      "request_id": "req-236316"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260400Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
       "level": "DEBUG",
-      "ip_address": "192.168.65.55",
+      "ip_address": "192.168.167.247",
       "message": "Config loaded from environment",
-      "request_id": "req-384348"
+      "request_id": "req-867790"
     },
     {
-      "timestamp": "2026-04-24T11:23:00.848218Z",
-      "client_id": "client-node-1",
-      "service": "payment-service",
-      "level": "INFO",
-      "ip_address": "192.168.65.55",
-      "message": "Data fetched from DB",
-      "request_id": "req-100912"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848223Z",
+      "timestamp": "2026-04-24T16:05:25.260415Z",
       "client_id": "client-node-1",
       "service": "inventory-service",
       "level": "WARNING",
-      "ip_address": "192.168.11.253",
-      "message": "Retry attempt 6281 of 3",
-      "request_id": "req-897265"
+      "ip_address": "192.168.214.52",
+      "message": "Slow DB query detected: 9019ms",
+      "request_id": "req-209692"
     },
     {
-      "timestamp": "2026-04-24T11:23:00.848228Z",
+      "timestamp": "2026-04-24T16:05:25.260440Z",
       "client_id": "client-node-1",
-      "service": "payment-service",
+      "service": "notification-service",
+      "level": "DEBUG",
+      "ip_address": "192.168.108.153",
+      "message": "DB query executed in 3894ms",
+      "request_id": "req-895170"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260457Z",
+      "client_id": "client-node-1",
+      "service": "inventory-service",
+      "level": "WARNING",
+      "ip_address": "192.168.119.115",
+      "message": "High memory usage: 5161%",
+      "request_id": "req-115110"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260470Z",
+      "client_id": "client-node-1",
+      "service": "inventory-service",
       "level": "INFO",
-      "ip_address": "192.168.59.217",
+      "ip_address": "192.168.167.247",
+      "message": "API call completed in 8186ms",
+      "request_id": "req-666185"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260480Z",
+      "client_id": "client-node-1",
+      "service": "user-service",
+      "level": "INFO",
+      "ip_address": "192.168.133.80",
       "message": "Cache refreshed",
-      "request_id": "req-586386"
+      "request_id": "req-186876"
     },
     {
-      "timestamp": "2026-04-24T11:23:00.848231Z",
+      "timestamp": "2026-04-24T16:05:25.260490Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
+      "level": "INFO",
+      "ip_address": "192.168.154.39",
+      "message": "Data fetched from DB",
+      "request_id": "req-553968"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260500Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
+      "level": "INFO",
+      "ip_address": "192.168.179.97",
+      "message": "Data fetched from DB",
+      "request_id": "req-422430"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260513Z",
+      "client_id": "client-node-1",
+      "service": "auth-service",
+      "level": "WARNING",
+      "ip_address": "192.168.108.153",
+      "message": "Slow DB query detected: 8259ms",
+      "request_id": "req-429729"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260526Z",
       "client_id": "client-node-1",
       "service": "notification-service",
       "level": "WARNING",
-      "ip_address": "192.168.224.13",
-      "message": "Rate limit approaching",
-      "request_id": "req-718404"
+      "ip_address": "192.168.56.143",
+      "message": "Slow DB query detected: 4799ms",
+      "request_id": "req-764297"
     },
     {
-      "timestamp": "2026-04-24T11:23:00.848237Z",
-      "client_id": "client-node-1",
-      "service": "auth-service",
-      "level": "DEBUG",
-      "ip_address": "192.168.65.55",
-      "message": "DB query executed in 7047ms",
-      "request_id": "req-945838"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848242Z",
-      "client_id": "client-node-1",
-      "service": "inventory-service",
-      "level": "DEBUG",
-      "ip_address": "192.168.52.220",
-      "message": "DB query executed in 7460ms",
-      "request_id": "req-975930"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848246Z",
-      "client_id": "client-node-1",
-      "service": "inventory-service",
-      "level": "INFO",
-      "ip_address": "192.168.227.186",
-      "message": "Data fetched from DB",
-      "request_id": "req-960824"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848250Z",
-      "client_id": "client-node-1",
-      "service": "auth-service",
-      "level": "INFO",
-      "ip_address": "192.168.115.185",
-      "message": "Data fetched from DB",
-      "request_id": "req-297197"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848254Z",
-      "client_id": "client-node-1",
-      "service": "inventory-service",
-      "level": "INFO",
-      "ip_address": "192.168.11.253",
-      "message": "Heartbeat OK",
-      "request_id": "req-584254"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848258Z",
-      "client_id": "client-node-1",
-      "service": "inventory-service",
-      "level": "INFO",
-      "ip_address": "192.168.147.185",
-      "message": "Session started",
-      "request_id": "req-163072"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848262Z",
+      "timestamp": "2026-04-24T16:05:25.260536Z",
       "client_id": "client-node-1",
       "service": "user-service",
       "level": "INFO",
-      "ip_address": "192.168.227.186",
-      "message": "Session started",
-      "request_id": "req-562291"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848266Z",
-      "client_id": "client-node-1",
-      "service": "auth-service",
-      "level": "INFO",
-      "ip_address": "192.168.65.55",
-      "message": "Heartbeat OK",
-      "request_id": "req-558556"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848270Z",
-      "client_id": "client-node-1",
-      "service": "inventory-service",
-      "level": "INFO",
-      "ip_address": "192.168.37.106",
+      "ip_address": "192.168.125.28",
       "message": "User login successful",
-      "request_id": "req-594429"
+      "request_id": "req-990583"
     },
     {
-      "timestamp": "2026-04-24T11:23:00.848274Z",
-      "client_id": "client-node-1",
-      "service": "inventory-service",
-      "level": "WARNING",
-      "ip_address": "192.168.147.185",
-      "message": "Rate limit approaching",
-      "request_id": "req-331220"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848279Z",
-      "client_id": "client-node-1",
-      "service": "user-service",
-      "level": "INFO",
-      "ip_address": "192.168.52.220",
-      "message": "API call completed in 6598ms",
-      "request_id": "req-442758"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848283Z",
+      "timestamp": "2026-04-24T16:05:25.260549Z",
       "client_id": "client-node-1",
       "service": "auth-service",
+      "level": "WARNING",
+      "ip_address": "192.168.198.64",
+      "message": "High memory usage: 6905%",
+      "request_id": "req-975358"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260559Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
       "level": "INFO",
-      "ip_address": "192.168.11.253",
-      "message": "Data fetched from DB",
-      "request_id": "req-655502"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848287Z",
-      "client_id": "client-node-1",
-      "service": "user-service",
-      "level": "ERROR",
-      "ip_address": "192.168.107.185",
-      "message": "Database connection failed",
-      "request_id": "req-642793"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848293Z",
-      "client_id": "client-node-1",
-      "service": "user-service",
-      "level": "ERROR",
-      "ip_address": "192.168.0.20",
-      "message": "Authentication failed for user 134",
-      "request_id": "req-903080"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848297Z",
-      "client_id": "client-node-1",
-      "service": "notification-service",
-      "level": "INFO",
-      "ip_address": "192.168.224.13",
+      "ip_address": "192.168.190.168",
       "message": "Session started",
-      "request_id": "req-879398"
+      "request_id": "req-136755"
     },
     {
-      "timestamp": "2026-04-24T11:23:00.848303Z",
-      "client_id": "client-node-1",
-      "service": "auth-service",
-      "level": "CRITICAL",
-      "ip_address": "192.168.237.167",
-      "message": "Service crashed: 3785",
-      "request_id": "req-464611"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848306Z",
-      "client_id": "client-node-1",
-      "service": "payment-service",
-      "level": "WARNING",
-      "ip_address": "192.168.12.90",
-      "message": "Disk usage above 80%",
-      "request_id": "req-818523"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848310Z",
+      "timestamp": "2026-04-24T16:05:25.260569Z",
       "client_id": "client-node-1",
       "service": "notification-service",
       "level": "ERROR",
-      "ip_address": "192.168.219.70",
+      "ip_address": "192.168.32.221",
       "message": "Database connection failed",
-      "request_id": "req-263032"
+      "request_id": "req-384904"
     },
     {
-      "timestamp": "2026-04-24T11:23:00.848314Z",
+      "timestamp": "2026-04-24T16:05:25.260580Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "INFO",
+      "ip_address": "192.168.52.158",
+      "message": "Heartbeat OK",
+      "request_id": "req-661827"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260589Z",
+      "client_id": "client-node-1",
+      "service": "user-service",
+      "level": "ERROR",
+      "ip_address": "192.168.198.64",
+      "message": "Database connection failed",
+      "request_id": "req-258385"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260599Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "INFO",
+      "ip_address": "192.168.52.158",
+      "message": "Cache refreshed",
+      "request_id": "req-372408"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260612Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "ERROR",
+      "ip_address": "192.168.32.221",
+      "message": "Timeout after 5351ms",
+      "request_id": "req-649158"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260622Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
+      "level": "DEBUG",
+      "ip_address": "192.168.154.39",
+      "message": "Entering function processRequest()",
+      "request_id": "req-373843"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260635Z",
+      "client_id": "client-node-1",
+      "service": "auth-service",
+      "level": "WARNING",
+      "ip_address": "192.168.154.39",
+      "message": "Slow DB query detected: 1320ms",
+      "request_id": "req-565487"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260654Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "ERROR",
+      "ip_address": "192.168.141.229",
+      "message": "File not found: /var/log/app/8808.log",
+      "request_id": "req-272541"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260666Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
+      "level": "INFO",
+      "ip_address": "192.168.214.52",
+      "message": "User login successful",
+      "request_id": "req-744747"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260676Z",
+      "client_id": "client-node-1",
+      "service": "auth-service",
+      "level": "INFO",
+      "ip_address": "192.168.24.187",
+      "message": "Request processed successfully",
+      "request_id": "req-457749"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260686Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
+      "level": "INFO",
+      "ip_address": "192.168.24.187",
+      "message": "Session started",
+      "request_id": "req-506748"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260696Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "INFO",
+      "ip_address": "192.168.56.143",
+      "message": "Session started",
+      "request_id": "req-454211"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260706Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "WARNING",
+      "ip_address": "192.168.119.115",
+      "message": "Rate limit approaching",
+      "request_id": "req-627977"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260719Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
+      "level": "WARNING",
+      "ip_address": "192.168.179.97",
+      "message": "Slow DB query detected: 364ms",
+      "request_id": "req-501162"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260730Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
+      "level": "INFO",
+      "ip_address": "192.168.50.142",
+      "message": "Request processed successfully",
+      "request_id": "req-664357"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260740Z",
+      "client_id": "client-node-1",
+      "service": "user-service",
+      "level": "INFO",
+      "ip_address": "192.168.32.221",
+      "message": "Request processed successfully",
+      "request_id": "req-919709"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260751Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
+      "level": "WARNING",
+      "ip_address": "192.168.167.247",
+      "message": "Rate limit approaching",
+      "request_id": "req-355826"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260760Z",
       "client_id": "client-node-1",
       "service": "inventory-service",
       "level": "INFO",
-      "ip_address": "192.168.11.253",
-      "message": "Heartbeat OK",
-      "request_id": "req-292467"
+      "ip_address": "192.168.141.229",
+      "message": "Session started",
+      "request_id": "req-117751"
     },
     {
-      "timestamp": "2026-04-24T11:23:00.848318Z",
+      "timestamp": "2026-04-24T16:05:25.260773Z",
+      "client_id": "client-node-1",
+      "service": "inventory-service",
+      "level": "WARNING",
+      "ip_address": "192.168.71.197",
+      "message": "High memory usage: 9325%",
+      "request_id": "req-408993"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260785Z",
       "client_id": "client-node-1",
       "service": "user-service",
       "level": "INFO",
-      "ip_address": "192.168.115.185",
-      "message": "Request processed successfully",
-      "request_id": "req-165322"
+      "ip_address": "192.168.56.143",
+      "message": "API call completed in 9317ms",
+      "request_id": "req-111848"
     },
     {
-      "timestamp": "2026-04-24T11:23:00.848323Z",
-      "client_id": "client-node-1",
-      "service": "payment-service",
-      "level": "CRITICAL",
-      "ip_address": "192.168.219.70",
-      "message": "Data corruption detected in table 5516",
-      "request_id": "req-318951"
-    },
-    {
-      "timestamp": "2026-04-24T11:23:00.848328Z",
+      "timestamp": "2026-04-24T16:05:25.260795Z",
       "client_id": "client-node-1",
       "service": "auth-service",
-      "level": "ERROR",
-      "ip_address": "192.168.60.41",
-      "message": "Timeout after 8926ms",
-      "request_id": "req-736539"
+      "level": "DEBUG",
+      "ip_address": "192.168.154.39",
+      "message": "Entering function processRequest()",
+      "request_id": "req-325731"
     },
     {
-      "timestamp": "2026-04-24T11:23:00.848333Z",
+      "timestamp": "2026-04-24T16:05:25.260805Z",
       "client_id": "client-node-1",
-      "service": "user-service",
+      "service": "payment-service",
       "level": "WARNING",
-      "ip_address": "192.168.115.185",
-      "message": "Retry attempt 2645 of 3",
-      "request_id": "req-520249"
+      "ip_address": "192.168.141.229",
+      "message": "Rate limit approaching",
+      "request_id": "req-679556"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260817Z",
+      "client_id": "client-node-1",
+      "service": "auth-service",
+      "level": "DEBUG",
+      "ip_address": "192.168.214.52",
+      "message": "Entering function processRequest()",
+      "request_id": "req-173571"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260830Z",
+      "client_id": "client-node-1",
+      "service": "inventory-service",
+      "level": "WARNING",
+      "ip_address": "192.168.119.115",
+      "message": "Slow DB query detected: 981ms",
+      "request_id": "req-374277"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260841Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
+      "level": "WARNING",
+      "ip_address": "192.168.190.238",
+      "message": "Disk usage above 80%",
+      "request_id": "req-577418"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260854Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "INFO",
+      "ip_address": "192.168.50.142",
+      "message": "API call completed in 818ms",
+      "request_id": "req-977988"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260864Z",
+      "client_id": "client-node-1",
+      "service": "inventory-service",
+      "level": "INFO",
+      "ip_address": "192.168.179.97",
+      "message": "Cache refreshed",
+      "request_id": "req-576409"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260874Z",
+      "client_id": "client-node-1",
+      "service": "auth-service",
+      "level": "CRITICAL",
+      "ip_address": "192.168.167.247",
+      "message": "SSL certificate expired",
+      "request_id": "req-348042"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260884Z",
+      "client_id": "client-node-1",
+      "service": "inventory-service",
+      "level": "DEBUG",
+      "ip_address": "192.168.50.142",
+      "message": "Config loaded from environment",
+      "request_id": "req-880294"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260894Z",
+      "client_id": "client-node-1",
+      "service": "inventory-service",
+      "level": "INFO",
+      "ip_address": "192.168.119.115",
+      "message": "Request processed successfully",
+      "request_id": "req-374947"
+    },
+    {
+      "timestamp": "2026-04-24T16:05:25.260903Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
+      "level": "INFO",
+      "ip_address": "192.168.32.221",
+      "message": "Data fetched from DB",
+      "request_id": "req-709389"
     }
   ]
 }
