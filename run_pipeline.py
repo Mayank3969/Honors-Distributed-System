@@ -11,7 +11,7 @@ import sys
 import os
 import time
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 def header(text):
@@ -23,7 +23,7 @@ def header(text):
 def run_step(label, script_path, args=None):
     header(f"STEP: {label}")
     cmd = [sys.executable, script_path] + (args or [])
-    result = subprocess.run(cmd, cwd=ROOT)
+    result = subprocess.run(cmd, cwd=PROJECT_ROOT_DIR)
     if result.returncode != 0:
         print(f"\n[ERROR] {label} failed with code {result.returncode}")
         sys.exit(1)
@@ -40,31 +40,31 @@ if __name__ == "__main__":
     # Step 1: Queue Manager (simulate infrastructure setup)
     run_step(
         "MODULE 2 -- Queue Manager: Setting up infrastructure",
-        os.path.join(ROOT, "queue_manager/queue_manager.py")
+        os.path.join(PROJECT_ROOT_DIR, "queue_manager/queue_manager.py")
     )
 
     # Step 2: Client sender generates logs and saves to outbox
     run_step(
         "MODULE 1 -- Client Sender: Client 1 sending batches",
-        os.path.join(ROOT, "client/client_sender.py"),
+        os.path.join(PROJECT_ROOT_DIR, "client/client_sender.py"),
         ["--client-id", "client-node-1", "--mode", "local", "--batches", "3"]
     )
     run_step(
         "MODULE 1 -- Client Sender: Client 2 sending batches",
-        os.path.join(ROOT, "client/client_sender.py"),
+        os.path.join(PROJECT_ROOT_DIR, "client/client_sender.py"),
         ["--client-id", "client-node-2", "--mode", "local", "--batches", "3"]
     )
 
     # Step 3: Batch worker processes all outbox files
     run_step(
         "MODULE 3 -- Batch Worker: Processing batches",
-        os.path.join(ROOT, "batch_worker/worker.py")
+        os.path.join(PROJECT_ROOT_DIR, "batch_worker/worker.py")
     )
 
     # Step 4: Storage layer query test (local files)
     run_step(
         "MODULE 4 -- Storage Layer: Querying results",
-        os.path.join(ROOT, "storage/storage_layer.py")
+        os.path.join(PROJECT_ROOT_DIR, "storage/storage_layer.py")
     )
 
     # Final summary
