@@ -1,79 +1,74 @@
 {
   "batch_id": "client-node-2-batch-3",
   "client_id": "client-node-2",
-  "worker_id": "worker-local-27032",
-  "processed_at": "2026-04-24T16:05:33.861850Z",
+  "worker_id": "worker-local-24472",
+  "processed_at": "2026-04-24T16:11:05.862884Z",
   "total_logs": 50,
   "level_counts": {
-    "WARNING": 13,
-    "CRITICAL": 2,
-    "ERROR": 8,
-    "INFO": 23,
-    "DEBUG": 4
+    "ERROR": 5,
+    "INFO": 29,
+    "DEBUG": 4,
+    "WARNING": 11,
+    "CRITICAL": 1
   },
-  "error_rate_pct": 16.0,
-  "critical_count": 2,
+  "error_rate_pct": 10.0,
+  "critical_count": 1,
   "top_services": {
     "payment-service": 14,
-    "inventory-service": 10,
-    "notification-service": 9,
-    "auth-service": 9,
-    "user-service": 8
+    "user-service": 11,
+    "notification-service": 10,
+    "inventory-service": 9,
+    "auth-service": 6
   },
   "top_ips": {
-    "192.168.173.186": 7,
-    "192.168.194.50": 6,
-    "192.168.217.117": 5,
-    "192.168.191.92": 5,
-    "192.168.8.96": 4,
-    "192.168.125.30": 4,
-    "192.168.189.94": 3,
-    "192.168.12.254": 3,
-    "192.168.1.231": 2,
-    "192.168.220.212": 2
+    "192.168.242.51": 5,
+    "192.168.28.72": 5,
+    "192.168.98.137": 5,
+    "192.168.15.55": 4,
+    "192.168.142.145": 4,
+    "192.168.113.131": 4,
+    "192.168.55.69": 3,
+    "192.168.111.18": 3,
+    "192.168.197.29": 3,
+    "192.168.172.2": 2
   },
   "error_samples": [
     {
-      "timestamp": "2026-04-24T16:05:30.004701Z",
+      "timestamp": "2026-04-24T16:11:02.004914Z",
       "service": "notification-service",
-      "message": "Timeout after 6256ms",
-      "ip": "192.168.189.94"
+      "message": "File not found: /var/log/app/507.log",
+      "ip": "192.168.242.51"
     },
     {
-      "timestamp": "2026-04-24T16:05:30.004749Z",
+      "timestamp": "2026-04-24T16:11:02.005144Z",
       "service": "user-service",
-      "message": "Timeout after 5009ms",
-      "ip": "192.168.125.30"
+      "message": "Authentication failed for user 8874",
+      "ip": "192.168.242.51"
     },
     {
-      "timestamp": "2026-04-24T16:05:30.004881Z",
+      "timestamp": "2026-04-24T16:11:02.005257Z",
+      "service": "auth-service",
+      "message": "File not found: /var/log/app/4185.log",
+      "ip": "192.168.15.55"
+    },
+    {
+      "timestamp": "2026-04-24T16:11:02.005381Z",
       "service": "user-service",
-      "message": "Database connection failed",
-      "ip": "192.168.8.96"
+      "message": "Authentication failed for user 2478",
+      "ip": "192.168.83.11"
     },
     {
-      "timestamp": "2026-04-24T16:05:30.004897Z",
-      "service": "payment-service",
-      "message": "File not found: /var/log/app/956.log",
-      "ip": "192.168.173.186"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:30.004938Z",
-      "service": "inventory-service",
-      "message": "File not found: /var/log/app/2441.log",
-      "ip": "192.168.125.30"
+      "timestamp": "2026-04-24T16:11:02.005444Z",
+      "service": "auth-service",
+      "message": "Timeout after 5787ms",
+      "ip": "192.168.142.145"
     }
   ],
   "critical_alerts": [
     {
-      "timestamp": "2026-04-24T16:05:30.004691Z",
+      "timestamp": "2026-04-24T16:11:02.005470Z",
       "service": "payment-service",
-      "message": "Service crashed: 7057"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:30.005026Z",
-      "service": "user-service",
-      "message": "Data corruption detected in table 5106"
+      "message": "SSL certificate expired"
     }
   ],
   "status": "SUCCESS"

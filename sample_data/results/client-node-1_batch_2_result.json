@@ -1,74 +1,74 @@
 {
   "batch_id": "client-node-1-batch-2",
   "client_id": "client-node-1",
-  "worker_id": "worker-local-27032",
-  "processed_at": "2026-04-24T16:05:32.036691Z",
+  "worker_id": "worker-local-24472",
+  "processed_at": "2026-04-24T16:11:04.037691Z",
   "total_logs": 50,
   "level_counts": {
-    "INFO": 23,
+    "DEBUG": 8,
+    "INFO": 28,
     "ERROR": 6,
-    "WARNING": 14,
-    "DEBUG": 6,
-    "CRITICAL": 1
+    "CRITICAL": 1,
+    "WARNING": 7
   },
   "error_rate_pct": 12.0,
   "critical_count": 1,
   "top_services": {
-    "notification-service": 15,
+    "payment-service": 14,
     "inventory-service": 11,
-    "auth-service": 10,
-    "payment-service": 9,
-    "user-service": 5
+    "auth-service": 11,
+    "notification-service": 10,
+    "user-service": 4
   },
   "top_ips": {
-    "192.168.167.247": 5,
-    "192.168.154.39": 5,
-    "192.168.141.229": 4,
-    "192.168.119.115": 4,
-    "192.168.32.221": 4,
-    "192.168.125.28": 3,
-    "192.168.214.52": 3,
-    "192.168.179.97": 3,
-    "192.168.56.143": 3,
-    "192.168.50.142": 3
+    "192.168.24.93": 11,
+    "192.168.19.136": 4,
+    "192.168.48.73": 4,
+    "192.168.122.127": 4,
+    "192.168.130.111": 3,
+    "192.168.239.2": 3,
+    "192.168.236.31": 3,
+    "192.168.19.48": 3,
+    "192.168.23.162": 3,
+    "192.168.229.148": 2
   },
   "error_samples": [
     {
-      "timestamp": "2026-04-24T16:05:25.260361Z",
-      "service": "inventory-service",
-      "message": "Authentication failed for user 473",
-      "ip": "192.168.167.247"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:25.260372Z",
-      "service": "notification-service",
-      "message": "Database connection failed",
-      "ip": "192.168.190.168"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:25.260569Z",
-      "service": "notification-service",
-      "message": "Database connection failed",
-      "ip": "192.168.32.221"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:25.260589Z",
-      "service": "user-service",
-      "message": "Database connection failed",
-      "ip": "192.168.198.64"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:25.260612Z",
+      "timestamp": "2026-04-24T16:10:57.240078Z",
       "service": "payment-service",
-      "message": "Timeout after 5351ms",
-      "ip": "192.168.32.221"
+      "message": "Null pointer exception in module 7295",
+      "ip": "192.168.24.93"
+    },
+    {
+      "timestamp": "2026-04-24T16:10:57.240127Z",
+      "service": "notification-service",
+      "message": "Null pointer exception in module 8516",
+      "ip": "192.168.236.31"
+    },
+    {
+      "timestamp": "2026-04-24T16:10:57.240153Z",
+      "service": "inventory-service",
+      "message": "Timeout after 7367ms",
+      "ip": "192.168.24.93"
+    },
+    {
+      "timestamp": "2026-04-24T16:10:57.240160Z",
+      "service": "payment-service",
+      "message": "Null pointer exception in module 6605",
+      "ip": "192.168.23.162"
+    },
+    {
+      "timestamp": "2026-04-24T16:10:57.240214Z",
+      "service": "user-service",
+      "message": "Authentication failed for user 102",
+      "ip": "192.168.19.136"
     }
   ],
   "critical_alerts": [
     {
-      "timestamp": "2026-04-24T16:05:25.260874Z",
-      "service": "auth-service",
-      "message": "SSL certificate expired"
+      "timestamp": "2026-04-24T16:10:57.240093Z",
+      "service": "user-service",
+      "message": "Out of memory error"
     }
   ],
   "status": "SUCCESS"

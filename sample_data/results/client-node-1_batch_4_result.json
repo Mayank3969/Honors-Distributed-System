@@ -1,8 +1,8 @@
 {
   "batch_id": "client-node-1-batch-4",
   "client_id": "client-node-1",
-  "worker_id": "worker-local-27032",
-  "processed_at": "2026-04-24T16:05:32.644380Z",
+  "worker_id": "worker-local-24472",
+  "processed_at": "2026-04-24T16:11:04.647476Z",
   "total_logs": 50,
   "level_counts": {
     "WARNING": 9,

@@ -1,74 +1,84 @@
 {
   "batch_id": "client-node-1-batch-3",
   "client_id": "client-node-1",
-  "worker_id": "worker-local-27032",
-  "processed_at": "2026-04-24T16:05:32.339484Z",
+  "worker_id": "worker-local-24472",
+  "processed_at": "2026-04-24T16:11:04.342379Z",
   "total_logs": 50,
   "level_counts": {
-    "INFO": 24,
-    "WARNING": 13,
-    "DEBUG": 7,
-    "ERROR": 5,
-    "CRITICAL": 1
+    "WARNING": 8,
+    "INFO": 26,
+    "DEBUG": 4,
+    "ERROR": 9,
+    "CRITICAL": 3
   },
-  "error_rate_pct": 10.0,
-  "critical_count": 1,
+  "error_rate_pct": 18.0,
+  "critical_count": 3,
   "top_services": {
-    "notification-service": 12,
-    "inventory-service": 11,
+    "inventory-service": 15,
     "user-service": 11,
-    "payment-service": 10,
-    "auth-service": 6
+    "auth-service": 10,
+    "notification-service": 8,
+    "payment-service": 6
   },
   "top_ips": {
-    "192.168.50.142": 7,
-    "192.168.190.238": 5,
-    "192.168.146.96": 4,
-    "192.168.141.229": 4,
-    "192.168.179.97": 4,
-    "192.168.52.158": 4,
-    "192.168.133.80": 3,
-    "192.168.167.247": 3,
-    "192.168.24.187": 2,
-    "192.168.119.115": 2
+    "192.168.239.2": 5,
+    "192.168.122.127": 5,
+    "192.168.212.241": 5,
+    "192.168.130.111": 5,
+    "192.168.49.84": 4,
+    "192.168.229.148": 4,
+    "192.168.48.73": 3,
+    "192.168.57.30": 3,
+    "192.168.108.207": 2,
+    "192.168.91.59": 2
   },
   "error_samples": [
     {
-      "timestamp": "2026-04-24T16:05:26.264073Z",
-      "service": "inventory-service",
-      "message": "Null pointer exception in module 4522",
-      "ip": "192.168.50.142"
+      "timestamp": "2026-04-24T16:10:58.242289Z",
+      "service": "auth-service",
+      "message": "Null pointer exception in module 3204",
+      "ip": "192.168.122.127"
     },
     {
-      "timestamp": "2026-04-24T16:05:26.264201Z",
-      "service": "inventory-service",
-      "message": "Authentication failed for user 6938",
-      "ip": "192.168.179.97"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:26.264401Z",
-      "service": "notification-service",
-      "message": "File not found: /var/log/app/4954.log",
-      "ip": "192.168.52.158"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:26.264640Z",
+      "timestamp": "2026-04-24T16:10:58.242375Z",
       "service": "user-service",
-      "message": "File not found: /var/log/app/1458.log",
-      "ip": "192.168.125.28"
+      "message": "File not found: /var/log/app/9376.log",
+      "ip": "192.168.236.31"
     },
     {
-      "timestamp": "2026-04-24T16:05:26.264702Z",
-      "service": "notification-service",
-      "message": "Timeout after 742ms",
-      "ip": "192.168.50.142"
+      "timestamp": "2026-04-24T16:10:58.242384Z",
+      "service": "inventory-service",
+      "message": "Database connection failed",
+      "ip": "192.168.49.84"
+    },
+    {
+      "timestamp": "2026-04-24T16:10:58.242426Z",
+      "service": "payment-service",
+      "message": "File not found: /var/log/app/5281.log",
+      "ip": "192.168.239.2"
+    },
+    {
+      "timestamp": "2026-04-24T16:10:58.242447Z",
+      "service": "inventory-service",
+      "message": "Database connection failed",
+      "ip": "192.168.229.148"
     }
   ],
   "critical_alerts": [
     {
-      "timestamp": "2026-04-24T16:05:26.264345Z",
-      "service": "auth-service",
-      "message": "Data corruption detected in table 2572"
+      "timestamp": "2026-04-24T16:10:58.242312Z",
+      "service": "payment-service",
+      "message": "Data corruption detected in table 2284"
+    },
+    {
+      "timestamp": "2026-04-24T16:10:58.242352Z",
+      "service": "notification-service",
+      "message": "Out of memory error"
+    },
+    {
+      "timestamp": "2026-04-24T16:10:58.242723Z",
+      "service": "notification-service",
+      "message": "Out of memory error"
     }
   ],
   "status": "SUCCESS"

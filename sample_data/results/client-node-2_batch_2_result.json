@@ -1,77 +1,71 @@
 {
   "batch_id": "client-node-2-batch-2",
   "client_id": "client-node-2",
-  "worker_id": "worker-local-27032",
-  "processed_at": "2026-04-24T16:05:33.559115Z",
+  "worker_id": "worker-local-24472",
+  "processed_at": "2026-04-24T16:11:05.559442Z",
   "total_logs": 50,
   "level_counts": {
-    "DEBUG": 4,
-    "INFO": 28,
+    "INFO": 33,
+    "ERROR": 4,
     "WARNING": 8,
-    "ERROR": 8,
+    "DEBUG": 3,
     "CRITICAL": 2
   },
-  "error_rate_pct": 16.0,
+  "error_rate_pct": 8.0,
   "critical_count": 2,
   "top_services": {
-    "auth-service": 18,
-    "payment-service": 10,
-    "notification-service": 8,
-    "inventory-service": 8,
-    "user-service": 6
+    "payment-service": 12,
+    "auth-service": 11,
+    "notification-service": 10,
+    "inventory-service": 9,
+    "user-service": 8
   },
   "top_ips": {
-    "192.168.66.125": 6,
-    "192.168.217.117": 5,
-    "192.168.135.154": 5,
-    "192.168.1.231": 4,
-    "192.168.125.30": 4,
-    "192.168.230.175": 3,
-    "192.168.220.212": 3,
-    "192.168.189.94": 2,
-    "192.168.29.98": 2,
-    "192.168.173.186": 2
+    "192.168.142.145": 5,
+    "192.168.113.131": 5,
+    "192.168.172.2": 4,
+    "192.168.39.127": 4,
+    "192.168.103.244": 3,
+    "192.168.111.18": 3,
+    "192.168.28.72": 3,
+    "192.168.35.207": 3,
+    "192.168.86.229": 3,
+    "192.168.98.137": 3
   },
   "error_samples": [
     {
-      "timestamp": "2026-04-24T16:05:29.002605Z",
-      "service": "user-service",
-      "message": "Null pointer exception in module 8000",
-      "ip": "192.168.93.176"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:29.002636Z",
-      "service": "notification-service",
-      "message": "Authentication failed for user 5542",
-      "ip": "192.168.220.212"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:29.002672Z",
+      "timestamp": "2026-04-24T16:11:01.002425Z",
       "service": "payment-service",
-      "message": "Null pointer exception in module 4550",
-      "ip": "192.168.230.175"
+      "message": "Null pointer exception in module 317",
+      "ip": "192.168.103.244"
     },
     {
-      "timestamp": "2026-04-24T16:05:29.002684Z",
-      "service": "user-service",
+      "timestamp": "2026-04-24T16:11:01.002443Z",
+      "service": "payment-service",
+      "message": "Timeout after 2086ms",
+      "ip": "192.168.39.127"
+    },
+    {
+      "timestamp": "2026-04-24T16:11:01.002483Z",
+      "service": "auth-service",
+      "message": "Null pointer exception in module 6184",
+      "ip": "192.168.83.11"
+    },
+    {
+      "timestamp": "2026-04-24T16:11:01.002490Z",
+      "service": "notification-service",
       "message": "Database connection failed",
-      "ip": "192.168.220.212"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:29.002742Z",
-      "service": "inventory-service",
-      "message": "File not found: /var/log/app/8200.log",
-      "ip": "192.168.66.125"
+      "ip": "192.168.55.69"
     }
   ],
   "critical_alerts": [
     {
-      "timestamp": "2026-04-24T16:05:29.002676Z",
-      "service": "payment-service",
-      "message": "Out of memory error"
+      "timestamp": "2026-04-24T16:11:01.002527Z",
+      "service": "auth-service",
+      "message": "Data corruption detected in table 3660"
     },
     {
-      "timestamp": "2026-04-24T16:05:29.002765Z",
+      "timestamp": "2026-04-24T16:11:01.002581Z",
       "service": "auth-service",
       "message": "Out of memory error"
     }

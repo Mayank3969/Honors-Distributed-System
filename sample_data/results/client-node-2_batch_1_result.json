@@ -1,100 +1,68 @@
 {
   "batch_id": "client-node-2-batch-1",
   "client_id": "client-node-2",
-  "worker_id": "worker-local-27032",
-  "processed_at": "2026-04-24T16:05:33.255443Z",
+  "worker_id": "worker-local-24472",
+  "processed_at": "2026-04-24T16:11:05.255093Z",
   "total_logs": 50,
   "level_counts": {
-    "ERROR": 8,
-    "WARNING": 9,
-    "INFO": 24,
-    "CRITICAL": 6,
-    "DEBUG": 3
+    "INFO": 23,
+    "ERROR": 13,
+    "WARNING": 8,
+    "DEBUG": 6
   },
-  "error_rate_pct": 16.0,
-  "critical_count": 6,
+  "error_rate_pct": 26.0,
+  "critical_count": 0,
   "top_services": {
-    "inventory-service": 12,
-    "payment-service": 11,
-    "notification-service": 11,
-    "user-service": 9,
-    "auth-service": 7
+    "user-service": 13,
+    "notification-service": 13,
+    "auth-service": 13,
+    "payment-service": 7,
+    "inventory-service": 4
   },
   "top_ips": {
-    "192.168.104.208": 6,
-    "192.168.191.92": 5,
-    "192.168.125.30": 4,
-    "192.168.8.96": 4,
-    "192.168.135.154": 3,
-    "192.168.66.125": 3,
-    "192.168.29.98": 3,
-    "192.168.200.102": 3,
-    "192.168.194.50": 3,
-    "192.168.189.94": 3
+    "192.168.100.209": 5,
+    "192.168.86.229": 5,
+    "192.168.113.131": 4,
+    "192.168.98.137": 4,
+    "192.168.179.226": 4,
+    "192.168.111.18": 3,
+    "192.168.28.72": 3,
+    "192.168.96.129": 3,
+    "192.168.15.55": 3,
+    "192.168.89.254": 3
   },
   "error_samples": [
     {
-      "timestamp": "2026-04-24T16:05:28.000648Z",
+      "timestamp": "2026-04-24T16:11:00.000322Z",
       "service": "user-service",
-      "message": "Database connection failed",
-      "ip": "192.168.25.25"
+      "message": "File not found: /var/log/app/2829.log",
+      "ip": "192.168.100.209"
     },
     {
-      "timestamp": "2026-04-24T16:05:28.000773Z",
-      "service": "payment-service",
-      "message": "Null pointer exception in module 7916",
-      "ip": "192.168.189.94"
+      "timestamp": "2026-04-24T16:11:00.000343Z",
+      "service": "notification-service",
+      "message": "File not found: /var/log/app/7055.log",
+      "ip": "192.168.100.209"
     },
     {
-      "timestamp": "2026-04-24T16:05:28.000778Z",
+      "timestamp": "2026-04-24T16:11:00.000365Z",
       "service": "inventory-service",
-      "message": "File not found: /var/log/app/5369.log",
-      "ip": "192.168.8.96"
+      "message": "Null pointer exception in module 4708",
+      "ip": "192.168.98.137"
     },
     {
-      "timestamp": "2026-04-24T16:05:28.000817Z",
-      "service": "user-service",
+      "timestamp": "2026-04-24T16:11:00.000369Z",
+      "service": "notification-service",
       "message": "Database connection failed",
-      "ip": "192.168.1.231"
+      "ip": "192.168.14.156"
     },
     {
-      "timestamp": "2026-04-24T16:05:28.000831Z",
-      "service": "payment-service",
-      "message": "Null pointer exception in module 6320",
-      "ip": "192.168.8.96"
+      "timestamp": "2026-04-24T16:11:00.000378Z",
+      "service": "user-service",
+      "message": "Authentication failed for user 5082",
+      "ip": "192.168.98.137"
     }
   ],
-  "critical_alerts": [
-    {
-      "timestamp": "2026-04-24T16:05:28.000718Z",
-      "service": "notification-service",
-      "message": "Out of memory error"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:28.000755Z",
-      "service": "inventory-service",
-      "message": "SSL certificate expired"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:28.000788Z",
-      "service": "inventory-service",
-      "message": "Out of memory error"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:28.000842Z",
-      "service": "notification-service",
-      "message": "Service crashed: 7387"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:28.000863Z",
-      "service": "notification-service",
-      "message": "Data corruption detected in table 7142"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:28.000900Z",
-      "service": "payment-service",
-      "message": "Service crashed: 2940"
-    }
-  ],
+  "critical_alerts": [],
   "status": "SUCCESS"
 }

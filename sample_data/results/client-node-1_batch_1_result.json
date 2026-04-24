@@ -1,89 +1,84 @@
 {
   "batch_id": "client-node-1-batch-1",
   "client_id": "client-node-1",
-  "worker_id": "worker-local-27032",
-  "processed_at": "2026-04-24T16:05:31.733982Z",
+  "worker_id": "worker-local-24472",
+  "processed_at": "2026-04-24T16:11:03.734406Z",
   "total_logs": 50,
   "level_counts": {
-    "INFO": 25,
-    "ERROR": 10,
+    "INFO": 27,
+    "DEBUG": 5,
     "WARNING": 7,
-    "CRITICAL": 4,
-    "DEBUG": 4
+    "ERROR": 8,
+    "CRITICAL": 3
   },
-  "error_rate_pct": 20.0,
-  "critical_count": 4,
+  "error_rate_pct": 16.0,
+  "critical_count": 3,
   "top_services": {
-    "payment-service": 14,
-    "inventory-service": 11,
-    "auth-service": 11,
-    "notification-service": 8,
-    "user-service": 6
+    "notification-service": 14,
+    "auth-service": 12,
+    "user-service": 11,
+    "inventory-service": 8,
+    "payment-service": 5
   },
   "top_ips": {
-    "192.168.190.238": 7,
-    "192.168.146.96": 5,
-    "192.168.119.115": 5,
-    "192.168.32.221": 4,
-    "192.168.141.229": 4,
-    "192.168.52.158": 3,
-    "192.168.71.197": 3,
-    "192.168.133.80": 3,
-    "192.168.56.143": 3,
-    "192.168.24.187": 2
+    "192.168.15.219": 5,
+    "192.168.134.189": 5,
+    "192.168.23.162": 4,
+    "192.168.24.93": 4,
+    "192.168.108.207": 4,
+    "192.168.253.197": 3,
+    "192.168.19.136": 3,
+    "192.168.239.2": 3,
+    "192.168.236.31": 3,
+    "192.168.122.127": 2
   },
   "error_samples": [
     {
-      "timestamp": "2026-04-24T16:05:24.258173Z",
-      "service": "user-service",
-      "message": "Null pointer exception in module 9149",
-      "ip": "192.168.71.197"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:24.258195Z",
+      "timestamp": "2026-04-24T16:10:56.238377Z",
       "service": "inventory-service",
-      "message": "Database connection failed",
-      "ip": "192.168.52.158"
+      "message": "Authentication failed for user 5258",
+      "ip": "192.168.15.219"
     },
     {
-      "timestamp": "2026-04-24T16:05:24.258250Z",
-      "service": "inventory-service",
-      "message": "Null pointer exception in module 1336",
-      "ip": "192.168.71.197"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:24.258264Z",
+      "timestamp": "2026-04-24T16:10:56.238391Z",
       "service": "payment-service",
-      "message": "Authentication failed for user 110",
-      "ip": "192.168.133.80"
+      "message": "File not found: /var/log/app/1073.log",
+      "ip": "192.168.23.162"
     },
     {
-      "timestamp": "2026-04-24T16:05:24.258268Z",
+      "timestamp": "2026-04-24T16:10:56.238414Z",
       "service": "auth-service",
-      "message": "Database connection failed",
-      "ip": "192.168.71.197"
+      "message": "Null pointer exception in module 9956",
+      "ip": "192.168.134.189"
+    },
+    {
+      "timestamp": "2026-04-24T16:10:56.238419Z",
+      "service": "notification-service",
+      "message": "File not found: /var/log/app/5815.log",
+      "ip": "192.168.108.207"
+    },
+    {
+      "timestamp": "2026-04-24T16:10:56.238461Z",
+      "service": "user-service",
+      "message": "Authentication failed for user 9659",
+      "ip": "192.168.15.219"
     }
   ],
   "critical_alerts": [
     {
-      "timestamp": "2026-04-24T16:05:24.258223Z",
-      "service": "auth-service",
+      "timestamp": "2026-04-24T16:10:56.238456Z",
+      "service": "inventory-service",
+      "message": "Out of memory error"
+    },
+    {
+      "timestamp": "2026-04-24T16:10:56.238520Z",
+      "service": "user-service",
       "message": "SSL certificate expired"
     },
     {
-      "timestamp": "2026-04-24T16:05:24.258233Z",
+      "timestamp": "2026-04-24T16:10:56.238540Z",
       "service": "inventory-service",
-      "message": "Data corruption detected in table 9677"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:24.258274Z",
-      "service": "payment-service",
-      "message": "Data corruption detected in table 2854"
-    },
-    {
-      "timestamp": "2026-04-24T16:05:24.258333Z",
-      "service": "notification-service",
-      "message": "Out of memory error"
+      "message": "Data corruption detected in table 7071"
     }
   ],
   "status": "SUCCESS"
