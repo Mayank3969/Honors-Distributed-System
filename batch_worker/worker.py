@@ -78,15 +78,15 @@ class LogAnalyzer:
                     "message":   msg,
                 })
 
-        total = len(logs)
+        total_processed_logs = len(logs)
         result = {
             "batch_id":        batch_id,
             "client_id":       client_id,
             "worker_id":       WORKER_ID,
             "processed_at":    datetime.datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%f") + "Z",
-            "total_logs":      total,
+            "total_logs":      total_processed_logs,
             "level_counts":    dict(level_counts),
-            "error_rate_pct":  round((level_counts["ERROR"] / total) * 100, 2),
+            "error_rate_pct":  round((level_counts["ERROR"] / total_processed_logs) * 100, 2) if total_processed_logs > 0 else 0,
             "critical_count":  level_counts["CRITICAL"],
             "top_services":    dict(service_counts.most_common(5)),
             "top_ips":         dict(ip_counts.most_common(10)),
