@@ -1,0 +1,68 @@
+{
+  "batch_id": "client-node-2-batch-3",
+  "client_id": "client-node-2",
+  "worker_id": "worker-local-5956",
+  "processed_at": "2026-04-24T11:23:09.461216Z",
+  "total_logs": 50,
+  "level_counts": {
+    "INFO": 22,
+    "DEBUG": 11,
+    "WARNING": 12,
+    "ERROR": 5
+  },
+  "error_rate_pct": 10.0,
+  "critical_count": 0,
+  "top_services": {
+    "inventory-service": 15,
+    "auth-service": 13,
+    "payment-service": 10,
+    "user-service": 7,
+    "notification-service": 5
+  },
+  "top_ips": {
+    "192.168.182.172": 7,
+    "192.168.64.185": 5,
+    "192.168.93.169": 5,
+    "192.168.196.86": 4,
+    "192.168.163.107": 4,
+    "192.168.67.86": 4,
+    "192.168.72.177": 3,
+    "192.168.107.21": 2,
+    "192.168.113.33": 2,
+    "192.168.169.36": 2
+  },
+  "error_samples": [
+    {
+      "timestamp": "2026-04-24T11:23:05.590765Z",
+      "service": "payment-service",
+      "message": "File not found: /var/log/app/8012.log",
+      "ip": "192.168.209.237"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:05.590784Z",
+      "service": "user-service",
+      "message": "Timeout after 6427ms",
+      "ip": "192.168.64.185"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:05.590793Z",
+      "service": "auth-service",
+      "message": "File not found: /var/log/app/8184.log",
+      "ip": "192.168.196.86"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:05.590829Z",
+      "service": "user-service",
+      "message": "File not found: /var/log/app/5298.log",
+      "ip": "192.168.169.36"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:05.590913Z",
+      "service": "auth-service",
+      "message": "Authentication failed for user 217",
+      "ip": "192.168.93.169"
+    }
+  ],
+  "critical_alerts": [],
+  "status": "SUCCESS"
+}

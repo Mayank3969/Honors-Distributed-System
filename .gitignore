@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.env
+venv/
+env/
+.venv/
+.pytest_cache/
+dashboard/__pycache__/
+client/__pycache__/
+queue_manager/__pycache__/
+batch_worker/__pycache__/
+storage/__pycache__/
+
+# Keep sample_data/results because it's an honors project demonstration?
+# Or ignore it so they can cleanly run? It's better to keep empty or keep what's there
+# so reviewers can see the JSON structures. We will not ignore the sample_data directory.

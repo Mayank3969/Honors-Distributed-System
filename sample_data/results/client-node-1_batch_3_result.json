@@ -1,0 +1,85 @@
+{
+  "batch_id": "client-node-1-batch-3",
+  "client_id": "client-node-1",
+  "worker_id": "worker-local-5956",
+  "processed_at": "2026-04-24T11:23:07.943399Z",
+  "total_logs": 50,
+  "level_counts": {
+    "WARNING": 9,
+    "INFO": 30,
+    "ERROR": 7,
+    "CRITICAL": 3,
+    "DEBUG": 1
+  },
+  "error_rate_pct": 14.0,
+  "critical_count": 3,
+  "top_services": {
+    "notification-service": 13,
+    "payment-service": 12,
+    "inventory-service": 10,
+    "auth-service": 8,
+    "user-service": 7
+  },
+  "top_ips": {
+    "192.168.103.161": 5,
+    "192.168.59.217": 5,
+    "192.168.188.2": 4,
+    "192.168.237.167": 4,
+    "192.168.0.20": 3,
+    "192.168.224.206": 3,
+    "192.168.107.185": 3,
+    "192.168.11.253": 3,
+    "192.168.219.70": 3,
+    "192.168.224.13": 2
+  },
+  "error_samples": [
+    {
+      "timestamp": "2026-04-24T11:23:01.850233Z",
+      "service": "notification-service",
+      "message": "Database connection failed",
+      "ip": "192.168.107.185"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:01.850273Z",
+      "service": "inventory-service",
+      "message": "Database connection failed",
+      "ip": "192.168.11.253"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:01.850282Z",
+      "service": "auth-service",
+      "message": "File not found: /var/log/app/7004.log",
+      "ip": "192.168.237.167"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:01.850301Z",
+      "service": "user-service",
+      "message": "Timeout after 9725ms",
+      "ip": "192.168.65.55"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:01.850446Z",
+      "service": "notification-service",
+      "message": "Database connection failed",
+      "ip": "192.168.12.90"
+    }
+  ],
+  "critical_alerts": [
+    {
+      "timestamp": "2026-04-24T11:23:01.850389Z",
+      "service": "notification-service",
+      "message": "Data corruption detected in table 5775"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:01.850403Z",
+      "service": "auth-service",
+      "message": "SSL certificate expired"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:01.850417Z",
+      "service": "notification-service",
+      "message": "Data corruption detected in table 8661"
+    }
+  ],
+  "status": "SUCCESS"
+}

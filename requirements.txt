@@ -1,0 +1,9 @@
+# Core (required for local mode)
+flask==3.0.0
+flask-cors==4.0.0
+requests==2.31.0
+python-dotenv==1.0.0
+
+# Optional: only needed for AWS mode
+# boto3==1.34.0
+# botocore==1.34.0

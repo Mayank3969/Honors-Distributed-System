@@ -1,0 +1,90 @@
+{
+  "batch_id": "client-node-1-batch-1",
+  "client_id": "client-node-1",
+  "worker_id": "worker-local-5956",
+  "processed_at": "2026-04-24T11:23:07.335239Z",
+  "total_logs": 50,
+  "level_counts": {
+    "INFO": 23,
+    "ERROR": 9,
+    "WARNING": 11,
+    "DEBUG": 3,
+    "CRITICAL": 4
+  },
+  "error_rate_pct": 18.0,
+  "critical_count": 4,
+  "top_services": {
+    "user-service": 12,
+    "payment-service": 11,
+    "auth-service": 10,
+    "inventory-service": 10,
+    "notification-service": 7
+  },
+  "top_ips": {
+    "192.168.188.2": 5,
+    "192.168.103.161": 5,
+    "192.168.0.20": 3,
+    "192.168.227.186": 3,
+    "192.168.224.13": 3,
+    "192.168.60.41": 3,
+    "192.168.59.217": 3,
+    "192.168.11.253": 3,
+    "192.168.37.106": 3,
+    "192.168.52.220": 2
+  },
+  "error_samples": [
+    {
+      "timestamp": "2026-04-24T11:22:59.845661Z",
+      "service": "auth-service",
+      "message": "Authentication failed for user 2763",
+      "ip": "192.168.52.220"
+    },
+    {
+      "timestamp": "2026-04-24T11:22:59.845724Z",
+      "service": "inventory-service",
+      "message": "Database connection failed",
+      "ip": "192.168.188.2"
+    },
+    {
+      "timestamp": "2026-04-24T11:22:59.845751Z",
+      "service": "notification-service",
+      "message": "Database connection failed",
+      "ip": "192.168.11.253"
+    },
+    {
+      "timestamp": "2026-04-24T11:22:59.845773Z",
+      "service": "notification-service",
+      "message": "Timeout after 6423ms",
+      "ip": "192.168.107.185"
+    },
+    {
+      "timestamp": "2026-04-24T11:22:59.845829Z",
+      "service": "payment-service",
+      "message": "File not found: /var/log/app/5628.log",
+      "ip": "192.168.188.2"
+    }
+  ],
+  "critical_alerts": [
+    {
+      "timestamp": "2026-04-24T11:22:59.845798Z",
+      "service": "auth-service",
+      "message": "SSL certificate expired"
+    },
+    {
+      "timestamp": "2026-04-24T11:22:59.845809Z",
+      "service": "user-service",
+      "message": "Service crashed: 7419"
+    },
+    {
+      "timestamp": "2026-04-24T11:22:59.845814Z",
+      "service": "payment-service",
+      "message": "Service crashed: 250"
+    },
+    {
+      "timestamp": "2026-04-24T11:22:59.845865Z",
+      "service": "auth-service",
+      "message": "Out of memory error"
+    }
+  ],
+  "status": "SUCCESS"
+}

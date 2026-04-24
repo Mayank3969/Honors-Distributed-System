@@ -1,0 +1,68 @@
+{
+  "batch_id": "client-node-2-batch-2",
+  "client_id": "client-node-2",
+  "worker_id": "worker-local-5956",
+  "processed_at": "2026-04-24T11:23:09.156268Z",
+  "total_logs": 50,
+  "level_counts": {
+    "DEBUG": 10,
+    "INFO": 23,
+    "ERROR": 5,
+    "WARNING": 12
+  },
+  "error_rate_pct": 10.0,
+  "critical_count": 0,
+  "top_services": {
+    "inventory-service": 14,
+    "notification-service": 13,
+    "payment-service": 8,
+    "auth-service": 8,
+    "user-service": 7
+  },
+  "top_ips": {
+    "192.168.64.185": 8,
+    "192.168.163.107": 4,
+    "192.168.182.172": 4,
+    "192.168.67.86": 4,
+    "192.168.196.86": 3,
+    "192.168.227.188": 3,
+    "192.168.151.87": 3,
+    "192.168.108.186": 3,
+    "192.168.169.36": 3,
+    "192.168.205.180": 2
+  },
+  "error_samples": [
+    {
+      "timestamp": "2026-04-24T11:23:04.587216Z",
+      "service": "user-service",
+      "message": "Null pointer exception in module 8241",
+      "ip": "192.168.227.188"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:04.587436Z",
+      "service": "auth-service",
+      "message": "Timeout after 9823ms",
+      "ip": "192.168.67.86"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:04.587605Z",
+      "service": "payment-service",
+      "message": "File not found: /var/log/app/1360.log",
+      "ip": "192.168.196.86"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:04.587687Z",
+      "service": "notification-service",
+      "message": "Database connection failed",
+      "ip": "192.168.64.185"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:04.587791Z",
+      "service": "auth-service",
+      "message": "Database connection failed",
+      "ip": "192.168.64.185"
+    }
+  ],
+  "critical_alerts": [],
+  "status": "SUCCESS"
+}

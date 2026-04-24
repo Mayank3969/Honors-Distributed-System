@@ -1,0 +1,85 @@
+{
+  "batch_id": "client-node-1-batch-2",
+  "client_id": "client-node-1",
+  "worker_id": "worker-local-5956",
+  "processed_at": "2026-04-24T11:23:07.639098Z",
+  "total_logs": 50,
+  "level_counts": {
+    "WARNING": 14,
+    "DEBUG": 6,
+    "INFO": 21,
+    "ERROR": 6,
+    "CRITICAL": 3
+  },
+  "error_rate_pct": 12.0,
+  "critical_count": 3,
+  "top_services": {
+    "inventory-service": 14,
+    "user-service": 13,
+    "auth-service": 11,
+    "payment-service": 6,
+    "notification-service": 6
+  },
+  "top_ips": {
+    "192.168.115.185": 6,
+    "192.168.11.253": 6,
+    "192.168.219.70": 5,
+    "192.168.224.13": 5,
+    "192.168.65.55": 5,
+    "192.168.52.220": 3,
+    "192.168.147.185": 3,
+    "192.168.12.90": 2,
+    "192.168.37.106": 2,
+    "192.168.0.20": 2
+  },
+  "error_samples": [
+    {
+      "timestamp": "2026-04-24T11:23:00.848131Z",
+      "service": "inventory-service",
+      "message": "File not found: /var/log/app/1871.log",
+      "ip": "192.168.237.167"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:00.848193Z",
+      "service": "auth-service",
+      "message": "Timeout after 7066ms",
+      "ip": "192.168.224.13"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:00.848287Z",
+      "service": "user-service",
+      "message": "Database connection failed",
+      "ip": "192.168.107.185"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:00.848293Z",
+      "service": "user-service",
+      "message": "Authentication failed for user 134",
+      "ip": "192.168.0.20"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:00.848310Z",
+      "service": "notification-service",
+      "message": "Database connection failed",
+      "ip": "192.168.219.70"
+    }
+  ],
+  "critical_alerts": [
+    {
+      "timestamp": "2026-04-24T11:23:00.848179Z",
+      "service": "user-service",
+      "message": "SSL certificate expired"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:00.848303Z",
+      "service": "auth-service",
+      "message": "Service crashed: 3785"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:00.848323Z",
+      "service": "payment-service",
+      "message": "Data corruption detected in table 5516"
+    }
+  ],
+  "status": "SUCCESS"
+}

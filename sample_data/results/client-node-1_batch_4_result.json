@@ -1,0 +1,90 @@
+{
+  "batch_id": "client-node-1-batch-4",
+  "client_id": "client-node-1",
+  "worker_id": "worker-local-5956",
+  "processed_at": "2026-04-24T11:23:08.245629Z",
+  "total_logs": 50,
+  "level_counts": {
+    "WARNING": 9,
+    "INFO": 28,
+    "ERROR": 6,
+    "DEBUG": 3,
+    "CRITICAL": 4
+  },
+  "error_rate_pct": 12.0,
+  "critical_count": 4,
+  "top_services": {
+    "user-service": 13,
+    "inventory-service": 11,
+    "notification-service": 10,
+    "payment-service": 9,
+    "auth-service": 7
+  },
+  "top_ips": {
+    "192.168.88.56": 5,
+    "192.168.82.100": 4,
+    "192.168.137.214": 4,
+    "192.168.176.118": 4,
+    "192.168.139.246": 4,
+    "192.168.59.116": 3,
+    "192.168.195.200": 3,
+    "192.168.30.192": 3,
+    "192.168.117.31": 3,
+    "192.168.80.14": 3
+  },
+  "error_samples": [
+    {
+      "timestamp": "2026-04-24T08:59:25.652540Z",
+      "service": "user-service",
+      "message": "Null pointer exception in module 5700",
+      "ip": "192.168.59.116"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:25.652650Z",
+      "service": "auth-service",
+      "message": "Timeout after 337ms",
+      "ip": "192.168.176.118"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:25.652704Z",
+      "service": "user-service",
+      "message": "Timeout after 3546ms",
+      "ip": "192.168.50.54"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:25.652740Z",
+      "service": "notification-service",
+      "message": "File not found: /var/log/app/5806.log",
+      "ip": "192.168.117.31"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:25.652840Z",
+      "service": "auth-service",
+      "message": "Null pointer exception in module 8261",
+      "ip": "192.168.176.118"
+    }
+  ],
+  "critical_alerts": [
+    {
+      "timestamp": "2026-04-24T08:59:25.652632Z",
+      "service": "notification-service",
+      "message": "Out of memory error"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:25.652806Z",
+      "service": "user-service",
+      "message": "Data corruption detected in table 9700"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:25.652830Z",
+      "service": "inventory-service",
+      "message": "Data corruption detected in table 7020"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:25.652857Z",
+      "service": "auth-service",
+      "message": "Service crashed: 7158"
+    }
+  ],
+  "status": "SUCCESS"
+}

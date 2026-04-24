@@ -1,0 +1,80 @@
+{
+  "batch_id": "client-node-1-batch-5",
+  "client_id": "client-node-1",
+  "worker_id": "worker-local-5956",
+  "processed_at": "2026-04-24T11:23:08.548433Z",
+  "total_logs": 50,
+  "level_counts": {
+    "DEBUG": 6,
+    "ERROR": 12,
+    "INFO": 23,
+    "WARNING": 7,
+    "CRITICAL": 2
+  },
+  "error_rate_pct": 24.0,
+  "critical_count": 2,
+  "top_services": {
+    "payment-service": 12,
+    "auth-service": 11,
+    "inventory-service": 10,
+    "user-service": 9,
+    "notification-service": 8
+  },
+  "top_ips": {
+    "192.168.7.189": 6,
+    "192.168.230.136": 5,
+    "192.168.176.118": 4,
+    "192.168.117.31": 4,
+    "192.168.30.192": 4,
+    "192.168.69.93": 3,
+    "192.168.158.22": 3,
+    "192.168.195.200": 3,
+    "192.168.174.198": 3,
+    "192.168.132.213": 3
+  },
+  "error_samples": [
+    {
+      "timestamp": "2026-04-24T08:59:26.656461Z",
+      "service": "auth-service",
+      "message": "Database connection failed",
+      "ip": "192.168.48.254"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656489Z",
+      "service": "inventory-service",
+      "message": "Authentication failed for user 853",
+      "ip": "192.168.230.136"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656527Z",
+      "service": "payment-service",
+      "message": "Timeout after 4362ms",
+      "ip": "192.168.158.22"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656590Z",
+      "service": "payment-service",
+      "message": "Authentication failed for user 4886",
+      "ip": "192.168.7.189"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656607Z",
+      "service": "user-service",
+      "message": "File not found: /var/log/app/9997.log",
+      "ip": "192.168.59.116"
+    }
+  ],
+  "critical_alerts": [
+    {
+      "timestamp": "2026-04-24T08:59:26.656747Z",
+      "service": "notification-service",
+      "message": "Out of memory error"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656764Z",
+      "service": "user-service",
+      "message": "Data corruption detected in table 6917"
+    }
+  ],
+  "status": "SUCCESS"
+}

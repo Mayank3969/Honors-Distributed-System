@@ -1,0 +1,458 @@
+{
+  "batch_id": "client-node-1-batch-5",
+  "client_id": "client-node-1",
+  "batch_num": 5,
+  "log_count": 50,
+  "logs": [
+    {
+      "timestamp": "2026-04-24T08:59:26.656393Z",
+      "client_id": "client-node-1",
+      "service": "auth-service",
+      "level": "DEBUG",
+      "ip_address": "192.168.69.93",
+      "message": "Entering function processRequest()",
+      "request_id": "req-264955"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656461Z",
+      "client_id": "client-node-1",
+      "service": "auth-service",
+      "level": "ERROR",
+      "ip_address": "192.168.48.254",
+      "message": "Database connection failed",
+      "request_id": "req-516170"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656489Z",
+      "client_id": "client-node-1",
+      "service": "inventory-service",
+      "level": "ERROR",
+      "ip_address": "192.168.230.136",
+      "message": "Authentication failed for user 853",
+      "request_id": "req-713693"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656502Z",
+      "client_id": "client-node-1",
+      "service": "inventory-service",
+      "level": "INFO",
+      "ip_address": "192.168.137.214",
+      "message": "Cache refreshed",
+      "request_id": "req-830978"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656514Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
+      "level": "INFO",
+      "ip_address": "192.168.230.136",
+      "message": "Session started",
+      "request_id": "req-674615"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656527Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "ERROR",
+      "ip_address": "192.168.158.22",
+      "message": "Timeout after 4362ms",
+      "request_id": "req-955319"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656535Z",
+      "client_id": "client-node-1",
+      "service": "inventory-service",
+      "level": "INFO",
+      "ip_address": "192.168.195.200",
+      "message": "Heartbeat OK",
+      "request_id": "req-740092"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656547Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
+      "level": "WARNING",
+      "ip_address": "192.168.176.118",
+      "message": "Retry attempt 4350 of 3",
+      "request_id": "req-106216"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656558Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "WARNING",
+      "ip_address": "192.168.117.31",
+      "message": "Retry attempt 3292 of 3",
+      "request_id": "req-930260"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656566Z",
+      "client_id": "client-node-1",
+      "service": "user-service",
+      "level": "INFO",
+      "ip_address": "192.168.230.136",
+      "message": "User login successful",
+      "request_id": "req-659443"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656573Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
+      "level": "INFO",
+      "ip_address": "192.168.158.22",
+      "message": "Session started",
+      "request_id": "req-682491"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656580Z",
+      "client_id": "client-node-1",
+      "service": "inventory-service",
+      "level": "INFO",
+      "ip_address": "192.168.117.31",
+      "message": "Cache refreshed",
+      "request_id": "req-740043"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656590Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "ERROR",
+      "ip_address": "192.168.7.189",
+      "message": "Authentication failed for user 4886",
+      "request_id": "req-136491"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656597Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
+      "level": "INFO",
+      "ip_address": "192.168.59.116",
+      "message": "Cache refreshed",
+      "request_id": "req-577364"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656607Z",
+      "client_id": "client-node-1",
+      "service": "user-service",
+      "level": "ERROR",
+      "ip_address": "192.168.59.116",
+      "message": "File not found: /var/log/app/9997.log",
+      "request_id": "req-326668"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656614Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
+      "level": "INFO",
+      "ip_address": "192.168.7.189",
+      "message": "Cache refreshed",
+      "request_id": "req-128890"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656623Z",
+      "client_id": "client-node-1",
+      "service": "auth-service",
+      "level": "ERROR",
+      "ip_address": "192.168.69.93",
+      "message": "Database connection failed",
+      "request_id": "req-446862"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656634Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "INFO",
+      "ip_address": "192.168.30.192",
+      "message": "Request processed successfully",
+      "request_id": "req-651768"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656648Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "ERROR",
+      "ip_address": "192.168.174.198",
+      "message": "Authentication failed for user 2183",
+      "request_id": "req-254302"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656664Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "ERROR",
+      "ip_address": "192.168.7.189",
+      "message": "File not found: /var/log/app/9195.log",
+      "request_id": "req-418986"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656679Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "ERROR",
+      "ip_address": "192.168.132.213",
+      "message": "Timeout after 2663ms",
+      "request_id": "req-359468"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656690Z",
+      "client_id": "client-node-1",
+      "service": "auth-service",
+      "level": "INFO",
+      "ip_address": "192.168.88.56",
+      "message": "Session started",
+      "request_id": "req-773398"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656706Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
+      "level": "WARNING",
+      "ip_address": "192.168.139.246",
+      "message": "Slow DB query detected: 7957ms",
+      "request_id": "req-147501"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656718Z",
+      "client_id": "client-node-1",
+      "service": "auth-service",
+      "level": "INFO",
+      "ip_address": "192.168.80.14",
+      "message": "Cache refreshed",
+      "request_id": "req-407677"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656732Z",
+      "client_id": "client-node-1",
+      "service": "user-service",
+      "level": "INFO",
+      "ip_address": "192.168.230.136",
+      "message": "User login successful",
+      "request_id": "req-438056"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656747Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
+      "level": "CRITICAL",
+      "ip_address": "192.168.174.198",
+      "message": "Out of memory error",
+      "request_id": "req-833685"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656764Z",
+      "client_id": "client-node-1",
+      "service": "user-service",
+      "level": "CRITICAL",
+      "ip_address": "192.168.7.189",
+      "message": "Data corruption detected in table 6917",
+      "request_id": "req-151375"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656777Z",
+      "client_id": "client-node-1",
+      "service": "auth-service",
+      "level": "DEBUG",
+      "ip_address": "192.168.154.205",
+      "message": "Entering function processRequest()",
+      "request_id": "req-910885"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656787Z",
+      "client_id": "client-node-1",
+      "service": "user-service",
+      "level": "INFO",
+      "ip_address": "192.168.117.31",
+      "message": "User login successful",
+      "request_id": "req-826677"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656803Z",
+      "client_id": "client-node-1",
+      "service": "user-service",
+      "level": "ERROR",
+      "ip_address": "192.168.132.213",
+      "message": "File not found: /var/log/app/4251.log",
+      "request_id": "req-557518"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656817Z",
+      "client_id": "client-node-1",
+      "service": "auth-service",
+      "level": "INFO",
+      "ip_address": "192.168.176.118",
+      "message": "API call completed in 3018ms",
+      "request_id": "req-374817"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656829Z",
+      "client_id": "client-node-1",
+      "service": "inventory-service",
+      "level": "INFO",
+      "ip_address": "192.168.158.22",
+      "message": "Cache refreshed",
+      "request_id": "req-198001"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656840Z",
+      "client_id": "client-node-1",
+      "service": "inventory-service",
+      "level": "INFO",
+      "ip_address": "192.168.174.198",
+      "message": "User login successful",
+      "request_id": "req-475049"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656854Z",
+      "client_id": "client-node-1",
+      "service": "user-service",
+      "level": "ERROR",
+      "ip_address": "192.168.48.254",
+      "message": "File not found: /var/log/app/1303.log",
+      "request_id": "req-471527"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656870Z",
+      "client_id": "client-node-1",
+      "service": "user-service",
+      "level": "WARNING",
+      "ip_address": "192.168.7.189",
+      "message": "High memory usage: 1835%",
+      "request_id": "req-674991"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656882Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "DEBUG",
+      "ip_address": "192.168.88.56",
+      "message": "Entering function processRequest()",
+      "request_id": "req-193785"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656894Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "WARNING",
+      "ip_address": "192.168.30.192",
+      "message": "Disk usage above 80%",
+      "request_id": "req-624038"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656905Z",
+      "client_id": "client-node-1",
+      "service": "auth-service",
+      "level": "INFO",
+      "ip_address": "192.168.30.192",
+      "message": "Cache refreshed",
+      "request_id": "req-494793"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656916Z",
+      "client_id": "client-node-1",
+      "service": "notification-service",
+      "level": "INFO",
+      "ip_address": "192.168.176.118",
+      "message": "Heartbeat OK",
+      "request_id": "req-779669"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656932Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "WARNING",
+      "ip_address": "192.168.69.93",
+      "message": "Slow DB query detected: 6629ms",
+      "request_id": "req-845980"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656942Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "DEBUG",
+      "ip_address": "192.168.195.200",
+      "message": "Entering function processRequest()",
+      "request_id": "req-935380"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656956Z",
+      "client_id": "client-node-1",
+      "service": "inventory-service",
+      "level": "INFO",
+      "ip_address": "192.168.7.189",
+      "message": "Data fetched from DB",
+      "request_id": "req-335920"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656966Z",
+      "client_id": "client-node-1",
+      "service": "auth-service",
+      "level": "INFO",
+      "ip_address": "192.168.117.31",
+      "message": "Session started",
+      "request_id": "req-845485"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656978Z",
+      "client_id": "client-node-1",
+      "service": "auth-service",
+      "level": "WARNING",
+      "ip_address": "192.168.154.205",
+      "message": "Rate limit approaching",
+      "request_id": "req-671160"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.656990Z",
+      "client_id": "client-node-1",
+      "service": "auth-service",
+      "level": "DEBUG",
+      "ip_address": "192.168.176.118",
+      "message": "Config loaded from environment",
+      "request_id": "req-644223"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.657001Z",
+      "client_id": "client-node-1",
+      "service": "inventory-service",
+      "level": "INFO",
+      "ip_address": "192.168.230.136",
+      "message": "Cache refreshed",
+      "request_id": "req-768329"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.657012Z",
+      "client_id": "client-node-1",
+      "service": "inventory-service",
+      "level": "INFO",
+      "ip_address": "192.168.30.192",
+      "message": "Heartbeat OK",
+      "request_id": "req-408083"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.657030Z",
+      "client_id": "client-node-1",
+      "service": "user-service",
+      "level": "ERROR",
+      "ip_address": "192.168.132.213",
+      "message": "Database connection failed",
+      "request_id": "req-725613"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.657042Z",
+      "client_id": "client-node-1",
+      "service": "inventory-service",
+      "level": "INFO",
+      "ip_address": "192.168.139.246",
+      "message": "Data fetched from DB",
+      "request_id": "req-840506"
+    },
+    {
+      "timestamp": "2026-04-24T08:59:26.657056Z",
+      "client_id": "client-node-1",
+      "service": "payment-service",
+      "level": "DEBUG",
+      "ip_address": "192.168.195.200",
+      "message": "DB query executed in 1318ms",
+      "request_id": "req-412408"
+    }
+  ]
+}

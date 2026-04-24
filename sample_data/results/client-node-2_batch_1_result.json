@@ -1,0 +1,85 @@
+{
+  "batch_id": "client-node-2-batch-1",
+  "client_id": "client-node-2",
+  "worker_id": "worker-local-5956",
+  "processed_at": "2026-04-24T11:23:08.852527Z",
+  "total_logs": 50,
+  "level_counts": {
+    "WARNING": 9,
+    "ERROR": 12,
+    "DEBUG": 5,
+    "CRITICAL": 3,
+    "INFO": 21
+  },
+  "error_rate_pct": 24.0,
+  "critical_count": 3,
+  "top_services": {
+    "notification-service": 13,
+    "payment-service": 12,
+    "user-service": 9,
+    "inventory-service": 8,
+    "auth-service": 8
+  },
+  "top_ips": {
+    "192.168.190.98": 5,
+    "192.168.107.21": 5,
+    "192.168.72.177": 5,
+    "192.168.93.169": 4,
+    "192.168.104.13": 4,
+    "192.168.227.188": 4,
+    "192.168.151.87": 4,
+    "192.168.64.185": 4,
+    "192.168.108.186": 2,
+    "192.168.205.180": 2
+  },
+  "error_samples": [
+    {
+      "timestamp": "2026-04-24T11:23:03.585289Z",
+      "service": "user-service",
+      "message": "Timeout after 902ms",
+      "ip": "192.168.27.43"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:03.585377Z",
+      "service": "notification-service",
+      "message": "File not found: /var/log/app/6782.log",
+      "ip": "192.168.151.87"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:03.585384Z",
+      "service": "auth-service",
+      "message": "Authentication failed for user 8799",
+      "ip": "192.168.107.21"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:03.585406Z",
+      "service": "notification-service",
+      "message": "Authentication failed for user 8244",
+      "ip": "192.168.107.21"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:03.585426Z",
+      "service": "notification-service",
+      "message": "Database connection failed",
+      "ip": "192.168.93.169"
+    }
+  ],
+  "critical_alerts": [
+    {
+      "timestamp": "2026-04-24T11:23:03.585322Z",
+      "service": "user-service",
+      "message": "Out of memory error"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:03.585412Z",
+      "service": "auth-service",
+      "message": "Data corruption detected in table 5301"
+    },
+    {
+      "timestamp": "2026-04-24T11:23:03.585503Z",
+      "service": "notification-service",
+      "message": "SSL certificate expired"
+    }
+  ],
+  "status": "SUCCESS"
+}
