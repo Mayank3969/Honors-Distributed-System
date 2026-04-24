@@ -146,19 +146,19 @@ class StorageQuery:
 
     def get_summary_stats(self) -> dict:
         """Aggregate stats across all batches for dashboard"""
-        results = self.get_all_results()
-        if not results:
+        fetched_results = self.get_all_results()
+        if not fetched_results:
             return self._empty_stats()
 
-        total_logs      = sum(r.get("total_logs", 0) for r in results)
+        total_logs      = sum(r.get("total_logs", 0) for r in fetched_results)
         total_errors    = sum(
             json.loads(r["level_counts"]).get("ERROR", 0)
             if isinstance(r.get("level_counts"), str)
             else r.get("level_counts", {}).get("ERROR", 0)
-            for r in results
+            for r in fetched_results
         )
-        total_critical  = sum(r.get("critical_count", 0) for r in results)
-        total_batches   = len(results)
+        total_critical  = sum(r.get("critical_count", 0) for r in fetched_results)
+        total_batches   = len(fetched_results)
 
         # Aggregate level counts
         agg_levels = {}
@@ -181,7 +181,7 @@ class StorageQuery:
         top_ips_sorted = sorted(agg_ips.items(), key=lambda x: x[1], reverse=True)[:10]
 
         # Workers used
-        workers = list(set(r.get("worker_id", "?") for r in results))
+        workers = list(set(r.get("worker_id", "?") for r in fetched_results))
 
         return {
             "total_logs":       total_logs,
