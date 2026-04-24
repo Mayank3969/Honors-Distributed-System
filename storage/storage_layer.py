@@ -162,7 +162,7 @@ class StorageQuery:
 
         # Aggregate level counts
         agg_levels = {}
-        for r in results:
+        for r in fetched_results:
             lc = r.get("level_counts", {})
             if isinstance(lc, str):
                 lc = json.loads(lc)
@@ -171,7 +171,7 @@ class StorageQuery:
 
         # Aggregate top IPs
         agg_ips = {}
-        for r in results:
+        for r in fetched_results:
             ips = r.get("top_ips", {})
             if isinstance(ips, str):
                 ips = json.loads(ips)
@@ -192,7 +192,7 @@ class StorageQuery:
             "level_counts":     agg_levels,
             "top_ips":          dict(top_ips_sorted),
             "workers_used":     workers,
-            "recent_batches":   results[-5:],
+            "recent_batches":   fetched_results[-5:],
         }
 
     def _scan_dynamodb(self) -> list:
