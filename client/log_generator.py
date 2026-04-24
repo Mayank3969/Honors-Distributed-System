@@ -10,7 +10,7 @@ import time
 import datetime
 import os
 
-LOG_LEVELS = ["INFO", "WARNING", "ERROR", "DEBUG", "CRITICAL"]
+SUPPORTED_LOG_LEVELS = ["INFO", "WARNING", "ERROR", "DEBUG", "CRITICAL"]
 SERVICES = ["auth-service", "payment-service", "user-service", "inventory-service", "notification-service"]
 IPS = [f"192.168.{random.randint(0,255)}.{random.randint(1,254)}" for _ in range(20)]
 
@@ -55,7 +55,7 @@ MESSAGES = {
 
 def generate_log_entry(client_id: str) -> dict:
     level = random.choices(
-        LOG_LEVELS,
+        SUPPORTED_LOG_LEVELS,
         weights=[50, 20, 15, 10, 5]
     )[0]
 
