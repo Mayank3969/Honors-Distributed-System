@@ -28,14 +28,14 @@ except ImportError:
 # ─── CONFIG ────────────────────────────────────────────────────────────────
 QUEUE_URL = os.getenv("SQS_QUEUE_URL", "YOUR_SQS_QUEUE_URL_HERE")
 AWS_REGION = os.getenv("AWS_REGION", "ap-south-1")
-BATCH_SIZE = 50       # logs per batch
+DEFAULT_BATCH_SIZE_LIMIT = 50       # logs per batch
 NUM_BATCHES = 5       # how many batches to send
 SEND_DELAY  = 1.0     # seconds between batches
 
 
 def send_batch_to_sqs(sqs_client, client_id: str, batch_num: int) -> bool:
     """Send one batch of logs to SQS"""
-    logs = generate_log_batch(client_id, batch_size=BATCH_SIZE)
+    logs = generate_log_batch(client_id, batch_size=DEFAULT_BATCH_SIZE_LIMIT)
 
     message_body = json.dumps({
         "batch_id": f"{client_id}-batch-{batch_num}",
@@ -74,7 +74,7 @@ def run_client_local(client_id: str):
     os.makedirs("sample_data/outbox", exist_ok=True)
 
     for batch_num in range(1, NUM_BATCHES + 1):
-        logs = generate_log_batch(client_id, batch_size=BATCH_SIZE)
+        logs = generate_log_batch(client_id, batch_size=DEFAULT_BATCH_SIZE_LIMIT)
         payload = {
             "batch_id": f"{client_id}-batch-{batch_num}",
             "client_id": client_id,
