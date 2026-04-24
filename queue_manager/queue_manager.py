@@ -21,8 +21,8 @@ except ImportError:
 AWS_REGION        = os.getenv("AWS_REGION", "ap-south-1")
 MAIN_QUEUE_NAME   = "log-analytics-queue"
 DLQ_NAME          = "log-analytics-dlq"          # Dead Letter Queue
-VISIBILITY_TIMEOUT = 300                          # seconds (5 min per job)
-MAX_RECEIVE_COUNT  = 3                            # retries before DLQ
+MSG_VISIBILITY_TIMEOUT_SEC = 300                          # seconds (5 min per job)
+DLQ_MAX_RETRY_COUNT        = 3                            # retries before DLQ
 
 
 class QueueManager:
@@ -78,7 +78,7 @@ class QueueManager:
 
         redrive_policy = json.dumps({
             "deadLetterTargetArn": self.dlq_arn,
-            "maxReceiveCount": str(MAX_RECEIVE_COUNT),
+            "maxReceiveCount": str(DLQ_MAX_RETRY_COUNT),
         })
 
         print(f"[QUEUE] Creating Main Queue: {MAIN_QUEUE_NAME}")
@@ -86,7 +86,7 @@ class QueueManager:
             resp = self.sqs.create_queue(
                 QueueName=MAIN_QUEUE_NAME,
                 Attributes={
-                    "VisibilityTimeout": str(VISIBILITY_TIMEOUT),
+                    "VisibilityTimeout": str(MSG_VISIBILITY_TIMEOUT_SEC),
                     "MessageRetentionPeriod": "86400",    # 1 day
                     "ReceiveMessageWaitTimeSeconds": "20", # Long polling
                     "RedrivePolicy": redrive_policy,
@@ -151,8 +151,8 @@ class QueueManager:
         print(f"\n  Main Queue URL : {self.main_queue_url}")
         print(f"  DLQ URL        : {self.dlq_url}")
         print(f"  DLQ ARN        : {self.dlq_arn}")
-        print(f"  Visibility TO  : {VISIBILITY_TIMEOUT}s")
-        print(f"  Max Retries    : {MAX_RECEIVE_COUNT} before DLQ")
+        print(f"  Visibility TO  : {MSG_VISIBILITY_TIMEOUT_SEC}s")
+        print(f"  Max Retries    : {DLQ_MAX_RETRY_COUNT} before DLQ")
 
     # ── SIMULATE (no AWS needed) ───────────────────────────────────────────
 
